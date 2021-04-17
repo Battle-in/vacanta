@@ -1,0 +1,76 @@
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 102px;
+    height: 276px;
+    background: #FFFFFF;
+    border-radius: 35px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 2%;
+    ol {
+        overflow: hidden;
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        //justify-content: space-between;
+        justify-content: center;
+        li:nth-child(1) button {
+            background: url("../../assets/icon/home.svg");
+        }
+        li:nth-child(2) button {
+            background: url("../../assets/icon/profile.svg");
+        }
+        li:nth-child(3) button {
+            background: url("../../assets/icon/job.svg");
+        }
+        li {
+            overflow: hidden;
+            display: flex;
+            flex: 1 1 auto;
+            transition: 0.4s;
+            width: 102px;
+            height: 95px;
+            align-items: center;
+            justify-content: center;
+            button {
+                width: 60px;
+                height: 60px;
+                background-position: center !important;
+                background-size: cover !important;
+                background-repeat: no-repeat !important;
+            }
+        }
+        li:nth-child(2):hover {
+            transition: 0.4s;
+            background: rgba(253, 143, 100, 0.8);
+            border-radius: 0px 0px 0px 0px;
+        }
+        li:nth-child(3):hover {
+            transition: 0.4s;
+            background: rgba(253, 143, 100, 0.8);
+            border-radius: 0px 0px 35px 35px;
+        }
+        li:nth-child(1):hover {
+            transition: 0.4s;
+            background: rgba(253, 143, 100, 0.8);
+            border-radius: 35px 35px 0px 0px;
+        }
+    }
+}
+
+.menur {
+    position: absolute;
+    height: 100vh;
+    right: 0%;
+    width: 350px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
